@@ -24,19 +24,19 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Меню", Toast.LENGTH_SHORT).show()
         }
 
-        val favourites = findViewById<Button>(R.id.button_menu)
+        val favourites = findViewById<Button>(R.id.button_settings)
         favourites.setOnClickListener {
             Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
         }
-        val later = findViewById<Button>(R.id.button_menu)
+        val later = findViewById<Button>(R.id.button_later)
         later.setOnClickListener {
             Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
         }
-        val compilations = findViewById<Button>(R.id.button_menu)
+        val compilations = findViewById<Button>(R.id.button_compilations)
         compilations.setOnClickListener {
             Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
         }
-        val settings = findViewById<Button>(R.id.button_menu)
+        val settings = findViewById<Button>(R.id.button_settings)
         settings.setOnClickListener {
             Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
         }
