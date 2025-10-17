@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,29 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val menu = findViewById<Button>(R.id.button_menu)
+        menu.setOnClickListener {
+            Toast.makeText(this, "Меню", Toast.LENGTH_SHORT).show()
+        }
+
+        val favourites = findViewById<Button>(R.id.button_menu)
+        favourites.setOnClickListener {
+            Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
+        }
+        val later = findViewById<Button>(R.id.button_menu)
+        later.setOnClickListener {
+            Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
+        }
+        val compilations = findViewById<Button>(R.id.button_menu)
+        compilations.setOnClickListener {
+            Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
+        }
+        val settings = findViewById<Button>(R.id.button_menu)
+        settings.setOnClickListener {
+            Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 }

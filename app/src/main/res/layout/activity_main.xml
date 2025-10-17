@@ -8,27 +8,125 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/center_bar"
         android:layout_width="300dp"
-        android:layout_height="500dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comer_background"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="vertical"
-        android:background="#73ff00"/>
-    
-    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@+id/top_bar">
+
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/btn_menu" />
+
+        <Button
+            android:id="@+id/button_favourites"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/btn_favourites" />
+
+        <Button
+            android:id="@+id/button_later"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/btn_later" />
+
+        <Button
+            android:id="@+id/button_compilations"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/btn_compilations" />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/btn_settings" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#018adf" />
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/avatar" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ballerina" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/matrix" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/superman" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoLink="web"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/disclaimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#df0102" />
-
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="#018adf" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
