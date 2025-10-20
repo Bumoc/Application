@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Мое приложение</string>
+    <string name="disclaimer">Постеры взяты с сайта https://www.movieposters.com</string>
+    <string name="btn_menu">Меню</string>
+    <string name="btn_favourites">Избранное</string>
+    <string name="btn_later">Посмотреть позже</string>
+    <string name="btn_compilations">Подборки</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="btn_search">Search it!</string>
+
+
 </resources>
